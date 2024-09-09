@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NBSC - Calculate Share Buy/Sell Amount in Nepal </title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<div id="menuIcon" class="menu-icon" onclick="menuicon()">
+<span></span>
+<span></span>
+<span></span>
+</div>
+<div class="logo">
+<a href="/">
+
+<h1>NBSC</h1>
+</a>
+</div>
+<div id="menu" class="menu mobile-menu">
+<a href="/">Home</a>
+<a href="/about.html">About Us</a>
+<a href="/contact.html">Contact Us</a>
+<a href="/disclaimer.html">Disclaimer</a>
+<a href="/privacypolicy.html">Privacy Policy</a>
+</div>
+</header>
+<main>
+
+<div class="calculation">
+<div class="center">
+<h2>Nepse Buy / Sell Calculator </h2>
+</div>
+<p style="text-align: center;"> ( Calculate Buy / Sell Price of Nepali Share Market ) </p>
+
+<div class="container">
+<div class="calculator" id="first">
+<div>
+<table class="inputtable">
+
+<tr id="BuySell">
+<td>Select Buy / Sell</td>
+<td>
+<select id="buyOpt" onchange="transactionFunction()">
+<option value="Sell">Sell</option>
+<option value="Buy">Buy</option>
+</select>
+</td>
+</tr>
+
+<tr id="investorType">
+<td>Select Investor Option</td>
+<td>
+<select id="investorTypeOpt" onchange="myAnotherFunction()">
+<option>Individual</option>
+<option>Institutional</option>
+</select>
+</td>
+</tr>
+
+<tr id="shdays">
+<td>Share Holding Days</td>
+<td>
+<select id="shdaysopt" onchange="myAnotherFunction()">
+<option value="lthd"> Less Than 365 Days</option>
+<option value="mthd">365 Days</option>
+<option value="mthd">More Than 365 Days</option>
+</select>
+</td>
+</tr>
+
+<tr id="BuyP">
+<td >Buy Price</td>
+<td><input id="purchaseP" type="number" placeholder="Enter Buy Price" onclick="select()" />
+</td>
+</tr>
+
+<tr id="sprice">
+<td>Sell Price</td>
+<td><input id="sp" type="number" placeholder="Enter Sell Price" onclick="select()" />
+</td>
+</tr>
+
+<tr id="Sqnty">
+<td>Share Quantity</td>
+<td><input id="shareQ" type="number" inputmode="numeric" placeholder="Enter Quantity" onclick="select()" />
+</td>
+</tr>
+
+</table>
+</div>
+
+<div class="calculate">
+<button type="submit" id="calculateBtn" onclick="calculate()">Calculate</button>
+</div>
+
+<!-- <div> -->
+<div class="sc-result-second strong output1" id="resultSecond1">
+<p>
+Amount to be Paid
+</p>
+<p class="result-amount" id="resultSecondValue1">
+</p>
+</div>
+<div class="sc-result-second strong output1" id="resultSecond2">
+<h3>
+Amount to be Received
+</h3>
+<p class="result-amount" id="resultSecondValue2">
+</p>
+<h3 id="note"><strong>NOTE : </strong> It Does Not Include Bank Charge . Means when Broker sends you payment, extra Bank charge may deduce that will depend upon your Bank, the Broker Bank and the Amount</h3>
+</div>
+<div id="detailSecond" class="details-second output">
+<h3 id="conc" style="text-align: center;">Conclusion</h3>
+<table id="outputDataTable" class="outputTable" style="display: none;">
+<tr id="ResInvType">
+<td>Investor Type</td>
+<td id="test9"></td>
+</tr>
+<tr id="ResInvType1">
+<td>Investor Type</td>
+<td id="test10"></td>
+</tr>
+<tr>
+<td>Amount Before Commission</td>
+<td id="test1"></td>
+</tr>
+<tr>
+<td>DP Charge</td>
+<td id="test2"></td>
+</tr>
+<tr>
+<td>Sebon Fee</td>
+<td id="test3"></td>
+</tr>
+<tr>
+<td>Commission</td>
+<td id="test4"></td>
+</tr>
+<tr id="tax">
+<td>Capital Gain Tax (CGT)
+</td>
+<td id="test5"></td>
+</tr>
+<tr id="breakEven">
+<td>Actual Price Per Share</td>
+<td id="test12"></td>
+</tr>
+<tr id="amountToPay">
+<td><strong>Amount To Pay</strong></td>
+<td id="test6" style="font-weight: bold;"></td>
+</tr>
+<tr id="profitAndLoss">
+<td>Profit/Loss</td>
+<td id="test8"></td>
+</tr>
+<tr id="returnOnInvestment">
+<td>Return on Investment</td>
+<td id="test11"></td>
+</tr>
+<tr id="amountToReceived">
+<td><strong>Amount Received</strong></td>
+<td id="test7" style="font-weight: bold;"></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+
+</main>
+<br>
+<footer id="footer">
+    <p>COPYRIGHT 2024 NSBSC. ALL RIGHTS RESERVED.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
