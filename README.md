@@ -1,4 +1,4 @@
-# 🧮 NBSC – Nepse Buy/Sell Calculator
+# 📈💰📊🖩 NBSC – Nepse Buy/Sell Calculator
 
 A simple and effective web-based calculator to compute **buy/sell price**, **profit/loss**, **capital gains tax (CGT)**, **commissions**, and more for the **Nepal Stock Exchange (NEPSE)**.
 
@@ -6,9 +6,9 @@ This tool is built to help Nepali investors calculate the **amount to be paid or
 
 ---
 
-## 🚀 Live Demo
+## 🚀 Site Demo
 
-👉 [Click here to use the calculator](https://mandiprajak.github.io/Nepse-Calculator/)
+👉 🔗 [Click here to use the calculator](https://mandiprajak.github.io/Nepse-Calculator/)
 
 ---
 
